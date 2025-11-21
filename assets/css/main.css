@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: playfair_display;
-    src: url('assets/fonts/playfair-display-semibold.ttf');
+    src: url('\a ssets\f ontsplayfair-display-semibold.ttf');
     font-weight: 600
 }
 
 @font-face {
     font-family: inter;
-    src: url('assets/fonts/Inter-Regular.otf');
+    src: url('\a ssets\f ontsInter-Regular.otf');
     font-weight: 400
 }
 
 @font-face {
     font-family: inter;
-    src: url('assets/fonts/Inter-SemiBold.otf');
+    src: url('\a ssets\f ontsInter-SemiBold.otf');
     font-weight: 600
 }
 
@@ -398,7 +398,7 @@ label {
     position: relative;
     width: 100%;
     height: 877px;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .banner__slider {
@@ -406,7 +406,7 @@ label {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
 .banner__slide {
@@ -415,19 +415,9 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
+    background: center/cover no-repeat;
     opacity: 0;
-    animation: 12s infinite slideAnimation;
-}
-
-.banner__bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center; /* Добавьте это */
-    z-index: 1;
+    animation: 12s infinite slideAnimation
 }
 
 .banner__slide::before {
@@ -437,8 +427,22 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .5);
-    z-index: 2;
+    background: rgba(0, 0, 0, .5)
+}
+
+.banner__slide:nth-child(1) {
+    background-image: url('../images/fon.png');
+    animation-delay: 0s
+}
+
+.banner__slide:nth-child(2) {
+    background-image: url('../images/slaid2.png');
+    animation-delay: 4s
+}
+
+.banner__slide:nth-child(3) {
+    background-image: url('../images/slaid3.png');
+    animation-delay: 8s
 }
 
 .banner__card {
@@ -450,39 +454,36 @@ label {
     width: 100%;
     max-width: 1920px;
     text-align: center;
-    text-shadow: 6px 4px 12px rgba(0, 0, 0, 0.57);
+    text-shadow: 6px 4px 12px rgba(0, 0, 0, .5725490196);
     box-sizing: border-box;
-    z-index: 3; /* Увеличиваем z-index */
+    z-index: 5
+}
+
+.banner__card-title {
+    font-weight: 600;
+    font-family: var(--font-family-play);
+    font-size: var(--font-size-1);
+    margin-bottom: 20px
+}
+
+.banner__card-text {
+    font-weight: 400;
+    font-size: var(--font-size-2);
+    margin-bottom: 40px
 }
 
 @keyframes slideAnimation {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    33% {
-        opacity: 1;
-    }
+
+    0%,
+    100%,
     43% {
-        opacity: 0;
+        opacity: 0
     }
-    100% {
-        opacity: 0;
+
+    10%,
+    33% {
+        opacity: 1
     }
-}
-
-.banner__slide:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.banner__slide:nth-child(2) {
-    animation-delay: 4s;
-}
-
-.banner__slide:nth-child(3) {
-    animation-delay: 8s;
 }
 
 .banner__card-btn {
@@ -1648,7 +1649,7 @@ label {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('./assets/images/fon.webp') 0 10px/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/fon.png') 0 10px/cover no-repeat;
     position: absolute;
     z-index: -1;
     filter: blur(4px)
@@ -1677,7 +1678,7 @@ label {
 }
 
 .path-first::after {
-    content: url(assets/images/arrow.svg);
+    content: url(/assets/images/arrow.svg);
     margin-left: 10px
 }
 
