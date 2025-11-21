@@ -436,12 +436,12 @@ label {
 }
 
 .banner__slide:nth-child(2) {
-    background-image: url('/assets/images/slaid2.webp');
+    background-image: url('../images/slaid2.webp');
     animation-delay: 4s
 }
 
 .banner__slide:nth-child(3) {
-    background-image: url('./assets/images/slaid3.webp');
+    background-image: url('../images/slaid3.webp');
     animation-delay: 8s
 }
 
@@ -1649,7 +1649,7 @@ label {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(assets/images/fon.webp) 0 10px/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/fon.webp') 0 10px/cover no-repeat;
     position: absolute;
     z-index: -1;
     filter: blur(4px)
