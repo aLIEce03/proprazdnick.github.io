@@ -426,6 +426,7 @@ label {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center; /* Добавьте это */
     z-index: 1;
 }
 
@@ -454,7 +455,29 @@ label {
     z-index: 3; /* Увеличиваем z-index */
 }
 
-/* Анимации остаются теми же */
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        z-index: 1;
+    }
+    5% {
+        opacity: 1;
+        z-index: 2;
+    }
+    30% {
+        opacity: 1;
+        z-index: 2;
+    }
+    35% {
+        opacity: 0;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: 1;
+    }
+}
+
 .banner__slide:nth-child(1) {
     animation-delay: 0s;
 }
@@ -465,15 +488,6 @@ label {
 
 .banner__slide:nth-child(3) {
     animation-delay: 8s;
-}
-
-@keyframes slideAnimation {
-    0%, 100%, 43% {
-        opacity: 0;
-    }
-    10%, 33% {
-        opacity: 1;
-    }
 }
 
 .banner__card-btn {
