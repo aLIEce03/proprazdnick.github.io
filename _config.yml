@@ -1,0 +1,8 @@
+include:
+  - assets/
+  - assets/fonts/
+  - assets/images/
+
+# Для GitHub Pages
+plugins:
+  - jekyll-sitemap
