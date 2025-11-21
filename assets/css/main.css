@@ -431,17 +431,17 @@ label {
 }
 
 .banner__slide:nth-child(1) {
-    background-image: url(assets/images/fon.webp);
+    background-image: url('../images/fon.webp');
     animation-delay: 0s
 }
 
 .banner__slide:nth-child(2) {
-    background-image: url(assets/images/slaid2.webp);
+    background-image: url('/assets/images/slaid2.webp');
     animation-delay: 4s
 }
 
 .banner__slide:nth-child(3) {
-    background-image: url(assets/images/slaid3.webp);
+    background-image: url('./assets/images/slaid3.webp');
     animation-delay: 8s
 }
 
